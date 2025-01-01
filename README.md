@@ -30,7 +30,7 @@ sudo vi /etc/network/interfaces
 auto enp1s0
 iface enp1s0 inet6 static
     address 2001:19f0:4400:64f1:5400:5ff:fe09:2df1/64 
-    up /sbin/ip -6 addr add 2001:19f0:4400:64f1:524c:1be0:5f94:3a18/64 dev enp1s0
+    up /sbin/ip -6 addr add 2001:19f0:4400:64f1:524c:1be0:5f94:3a18/128 dev enp1s0
 ```
 
 4. 重启网络服务
