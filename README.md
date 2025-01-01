@@ -24,8 +24,10 @@ sudo netplan apply
 ### Debian和较旧的 Ubuntu 版本 ###
 1. 编辑 /etc/network/interfaces 文件：
 sudo vi /etc/network/interfaces
+或者 进入 /etc/network/interfaces.d/
+新建文件 ipv6
 
-2. 添加或修改相关接口的配置：
+3. 添加或修改相关接口的配置：
 ```
 auto enp1s0
 iface enp1s0 inet6 static
